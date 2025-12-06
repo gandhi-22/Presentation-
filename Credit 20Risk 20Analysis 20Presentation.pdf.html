@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <title>Credit%20Risk%20Analysis%20Presentation.pdf</title>
+  <meta name="generator" content="LibreOffice 25.2.3.2 (Linux)"/>
+  <meta name="created" content="2006-08-16T00:00:00"/>
+  <meta name="changed" content="2011-08-01T06:04:30"/>
+  <meta name="AppVersion" content="14.0000"/>
+  <meta name="OOXMLCorePropertyIdentifier" content="DAG5xKbujZs"/>
+  <meta name="PresentationFormat" content="On-screen Show (4:3)"/>
+</head>
+<body>
+<h1></h1>
+<p><b>Presentation on</b></p>
+<p><b> Credit Risk Assessment  </b></p>
+<p><b>Submitted to :- Mr. Devansh </b></p>
+<p><b>                                               Assistant Professor</b></p>
+<p><b>Submitted By :- Rahul Tayal  </b></p>
+<p><b>                            72311669</b></p>
+<p><b>                                                 BBA IBM (BA) Sec-A </b></p>
+<h1 style="page-break-before:always; "></h1>
+<p>Credit Risk Analysis and Mitigation Strategies</p>
+<p>Insights from the Personal Loan Dataset</p>
+<p>A Data Analyst</p>
+<p>November 24, 2025</p>
+<p><i>A Deep Dive into Borrower Characteristics and Default Risk</i></p>
+<p>A Data Analyst</p>
+<p><a href="#Slide 11"><u>Credit Risk</u></a></p>
+<p>November 24, 2025</p>
+<p>1/10</p>
+<h1 style="page-break-before:always; "></h1>
+<p>Introduction and Objectives</p>
+<p>Defining the scope of the analysis</p>
+<p><b>What is Credit Risk?</b> The potential loss arising from a borrower’s failure to meet loan obligations (loan_status = 1).</p>
+<p><b>Data Source:</b> Personal Loan Dataset (32k+ records, 12 features).</p>
+<p><b>Goal:</b> To shift from reactive loss management to proactive risk mitigation.</p>
+<p><b>Key Objectives:</b></p>
+<p>Identify the most influential factors driving loan default.</p>
+<p>Analyze risk distribution across financial and demographic segments.</p>
+<p>Propose actionable policy recommendations for better lending practices.</p>
+<p>A Data Analyst</p>
+<p><a href="#Slide 2"><u>Credit Risk</u></a></p>
+<p>November 24, 2025</p>
+<p>2/10</p>
+<h1 style="page-break-before:always; "></h1>
+<p>Data Overview and Feature Selection</p>
+<p>Key variables and data quality observations</p>
+<p><b>Data Quality Note:</b></p>
+<p>Missing values in Outliers found in</p>
+<p>capping.</p>
+<p><b>Target Variable:</b></p>
+<p><b>Predictor Variables:</b></p>
+<p><b>Financial:</b></p>
+<p>loan_amnt loan_int_rate.</p>
+<p><b>Risk Metric:</b></p>
+<p>loan_percent_income</p>
+<p>(Debt-to-Income Ratio).</p>
+<p>,</p>
+<p><b>Credit Quality:</b></p>
+<p>(0 = Paid, 1 = Default)</p>
+<p><b>Context:</b></p>
+<p>of the loan).</p>
+<p>,</p>
+<p>,</p>
+<p>(Purp ose</p>
+<p>) require imputation or exclusion. were addressed via</p>
+<p>loan_status</p>
+<p>person_income,</p>
+<p>loan_grade,</p>
+<p>cb_person_cred_hist_length.</p>
+<p>loan_int_rate (</p>
+<p>≈10%</p>
+<p>person_age and person_emp_length</p>
+<p><b>Demographic:</b> person_age</p>
+<p>person_home_ownership person_emp_length.</p>
+<p>loan_intent</p>
+<p>A Data Analyst</p>
+<p><a href="#Slide 2"><u>Credit Risk</u></a></p>
+<p>November 24, 2025</p>
+<p>3/10</p>
+<h1 style="page-break-before:always; "></h1>
+<p>Baseline Risk Assessment</p>
+<p>Overall Default Rate</p>
+<p><b>Overall Default Rate (Unconditional):</b></p>
+<p>21.8</p>
+<p>%</p>
+<p>≈</p>
+<p><b>Key Insight:</b></p>
+<p>High Baseline Risk</p>
+<p>For every 100 loans issued in this portfolio, approximately 22 resulted in a loss. This high baseline necessitates a deep, segmented analysis<a href="#Slide 4"><u> </u></a>t<a href="#Slide 4"><u>o </a><a href="#Slide 6">is</a><a href="#Slide 4">o</a><a href="#Slide 5">la</a><a href="#Slide 2">te</a><a href="#Slide 11"> </a><a href="#Slide 2">ri</a><a href="#Slide 11">s</a><a href="#Slide 2">k</u></a></p>
+<p>ADataAnalyst </p>
+<p><a href="#Slide 2"><u>CreditRisk </u></a></p>
+<p>November24,2025</p>
+<p>4/10</p>
+<h1 style="page-break-before:always; "></h1>
+<p>Risk Segmentation by Credit Grade</p>
+<p>The primary driver of default risk</p>
+<p><b>Power BI Visualization 2 Suggestion:<i></b> Bar Chart: Default Rate by loan_grade. Must clearly show the steep gradient.</i></p>
+<p><b>Loan Grade (A</b></p>
+<p>probability.</p>
+<p><b>Observation:</b> The default rate increases systematically as the grade worsens</p>
+<p>(from A to G).</p>
+<p>→<b> G):</b> This feature is the strongest predictor of default</p>
+<p><b>Illustrative Data (Simulated for Presentation):</b></p>
+<p><b>Loan Grade Average Int. Rate Default Rate</b></p>
+<p>A C F </p>
+<p>7.9% 12.7% 17.5% </p>
+<p>6.5% 24.0% 50.1%</p>
+<p>Table: Risk increases sharply with lower grades.</p>
+<p>A Data Analyst</p>
+<p><a href="#Slide 2"><u>Credit Risk</u></a></p>
+<p>November 24, 2025</p>
+<p>5/10</p>
+<h1 style="page-break-before:always; "></h1>
+<p>The Critical Ratio: Loan-to-Income</p>
+<p>loan_percent_income</p>
+<p>Risk based on</p>
+<p>A ratio of<b> 0</b>.<b>25</b> appears to be a critical breaking point, where risk dramatically accelerates.</p>
+<p><b>Power BI Visualization 3 Suggestion:<i></b> Line Chart: Default Rate across binned</i></p>
+<p><i>loan_percent_income ratios.</i></p>
+<p><b>Definition:</b> loan_percent_income is the loan amount as a fraction of the borrower’s annual income.</p>
+<p><b>Key Finding:</b> This ratio acts as a severe risk multiplier.</p>
+<p><b>LowRatio(Safe) </b></p>
+<p><b>HighRatio(Critical)</b></p>
+<p>Ratio&lt;0.10(Loanis&lt;10%of </p>
+<p>Income). </p>
+<p>Default Rate:</p>
+<p>Ratio</p>
+<p>≥ 0.25 (Loan is ≥ 25% of</p>
+<p>Income).</p>
+<p>DefaultRate:≈45%</p>
+<p>≈5% </p>
+<p>Actionable Threshold</p>
+<p>A Data Analyst</p>
+<p><a href="#Slide 2"><u>Credit Risk</u></a></p>
+<p>November 24, 2025</p>
+<p>6/10</p>
+<h1 style="page-break-before:always; "></h1>
+<p>Demographic Risk Profile</p>
+<p>Home Ownership and Age Segmentation</p>
+<p><b>1. Home Ownership (person_home_ownership)</b></p>
+<p><b>Renters:</b> Highest default rate (</p>
+<p>constraints.</p>
+<p><b>Mortgage/Own:</b> Lower, more stable risk profiles.</p>
+<p>≈ 25%)—potentially due to higher liquidity</p>
+<p><b>2. Borrower Age (person_age)</b></p>
+<p><b>Younger Borrowers (20-30):</b> Higher default rates, correlating with shorter</p>
+<p>credit history (cb_person_cred_hist_length</p>
+<p>≤ 4 years).</p>
+<p><b>Older Borrowers (45+):</b> Exhibit the lowest default rates.</p>
+<p><b>Conclusion:<i></b> Risk modeling must use a combined score of age, home status, and</i></p>
+<p><i>credit history length.</i></p>
+<p>A Data Analyst</p>
+<p><a href="#Slide 2"><u>Credit Risk</u></a></p>
+<p>November 24, 2025</p>
+<p>7/10</p>
+<h1 style="page-break-before:always; "></h1>
+<p>Loan Intent and Stability</p>
+<p>Analyzing purpose and history length</p>
+<p><b>Loan Intent (loan_intent):</b></p>
+<p><b>Highest Risk Intents:<i></b> Debt Consolidation</i> and<i> Medical</i> loans often show</p>
+<p>elevated risk, suggesting they may be issued during periods of financial stress.</p>
+<p><b>Lowest Risk Intents:<i></b> Education</i> and<i> Home Improvement</i> tend to be safer.</p>
+<p><b>Credit History Length (cb_person_cred_hist_length):</b></p>
+<p>Loans issued with a credit history of 2-3 years have a default rate of up to</p>
+<p>35%. Loans with a history of 10+ years have a stable default rate under 15%.</p>
+<p><b>Power BI Visualization 4 Suggestion:<i></b> Bar Chart: Default Rate segmented by</i></p>
+<p><i>loan_intent.</i></p>
+<p>A Data Analyst</p>
+<p><a href="#Slide 2"><u>Credit Risk</u></a></p>
+<p>November 24, 2025</p>
+<p>8/10</p>
+<h1 style="page-break-before:always; "></h1>
+<p>Proposed Mitigation Strategies</p>
+<p>Translating data into policy</p>
+<p><b>1. Enforce LTI (Loan-to-Income) Cap</b></p>
+<p><b>Action:</b> Implement a hard upper limit on loan_percent_income at 25% for</p>
+<p>all new applications, irrespective of credit grade.</p>
+<p><b>2. Minimum Credit History</b></p>
+<p><b>Action:</b> Require a minimum cb_person_cred_hist_length of<b> 5</b> years for</p>
+<p>Grade D-G loans to ensure stability.</p>
+<p><b>3. Segmented Interest Rate Review</b></p>
+<p><b>Action:</b> Review and adjust interest rates for the highest-risk loan intents</p>
+<p>(<i>Debt Consolidation</i>,<i> Medical</i>) that fall into Grade C or D.</p>
+<p>A Data Analyst</p>
+<p><a href="#Slide 2"><u>Credit Risk</u></a></p>
+<p>November 24, 2025</p>
+<p>9/10</p>
+<h1 style="page-break-before:always; "></h1>
+<p>Conclusion and Recommendations</p>
+<p>Summary of key insights</p>
+<p><b>Summary of Key Findings:</b></p>
+<p><b>Grade is King:</b> Risk correlates almost perfectly with loan_grade and</p>
+<p>loan_int_rate.</p>
+<p><b>LTI is a Breaker:</b> The 25% Loan-to-Income ratio threshold is the strongest</p>
+<p>actionable policy point.</p>
+<p><b>Combined Risk:</b> Young, renting borrowers with short credit histories form</p>
+<p>the highest-risk segment.</p>
+<p><b>Next Steps:</b></p>
+<p>1 Develop a robust machine learning model (e.g., Logistic Regression) to</p>
+<p>generate a numeric risk score.</p>
+<p>2 ConductanA/Btestontheimpactoftheproposed</p>
+<p>25% LTI cap.</p>
+<p>3 Exploreexternaleconomicindicators(e.g.,localunemploymentrate)for</p>
+<p>enhanced risk modeling.</p>
+<p>A Data Analyst</p>
+<p><a href="#Slide 2"><u>Credit Risk</u></a></p>
+<p>November 24, 2025</p>
+<p>10 / 10</p>
+</body>
+</html>
